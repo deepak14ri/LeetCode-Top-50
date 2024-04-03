@@ -1,4 +1,4 @@
-/**
+/** JavaScript
  * Finds all unique triplets in the array which sum up to zero.
  * @param {number[]} nums - The array of integers.
  * @return {number[][]} - Array of unique triplets.
