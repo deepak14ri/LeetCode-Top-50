@@ -23,7 +23,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\1. Two Sum.js"
+            "program": "${workspaceFolder}\\31. Next Permutation"
         }
     ]
 }
