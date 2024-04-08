@@ -23,7 +23,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\31. Next Permutation"
+            "program": "${workspaceFolder}\\46. Permutations.js"
         }
     ]
 }
