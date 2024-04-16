@@ -23,7 +23,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\46. Permutations.js"
+            "program": "${workspaceFolder}\\Tricky Array SumOfOddKeys.js"
         }
     ]
 }

@@ -34,3 +34,7 @@ var fourSum = function(nums, target) {
     }
     return quadruplets;
 };
+
+var nums = [2,2,2,2,2];
+const target = 8;
+console.log(fourSum(nums, target));
