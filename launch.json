@@ -23,7 +23,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\Tricky Array SumOfOddKeys.js"
+            "program": "${workspaceFolder}\\12. Integer to Roman.js"
         }
     ]
 }
