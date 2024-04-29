@@ -10,3 +10,15 @@ var reverse = function(x) {
      return revX;
     }
  };
+
+//  or
+
+var reverse = function(x) {
+    if(x>0){
+        let reverse = String(x).split('').reverse().join('');
+        return reverse <= Math.pow(2,31)-1 ? reverse: 0;
+    }else{
+        let reverse = String(Math.abs(x)).split('').reverse().join('');
+        return -reverse > -Math.pow(2,31) ? -reverse: 0;
+    }
+};
