@@ -23,7 +23,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\13. Roman to Integer.js"
+            "program": "${workspaceFolder}\\fibonacci.py"
         }
     ]
 }
