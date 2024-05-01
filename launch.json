@@ -23,7 +23,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\fibonacci.py"
+            "program": "${workspaceFolder}\\17. Letter Combinations of a Phone Number.js"
         }
     ]
 }
