@@ -23,7 +23,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\32. Longest Valid Parentheses.js"
+            "program": "${workspaceFolder}\\21. Merge Two Sorted Lists.js"
         }
     ]
 }
