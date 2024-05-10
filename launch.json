@@ -23,7 +23,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\21. Merge Two Sorted Lists.js"
+            "program": "${workspaceFolder}\\30. Substring with Concatenation of All Words.js"
         }
     ]
 }
