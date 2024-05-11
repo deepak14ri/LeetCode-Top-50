@@ -23,7 +23,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\30. Substring with Concatenation of All Words.js"
+            "program": "${workspaceFolder}\\67. Add Binary.js"
         }
     ]
 }
