@@ -23,7 +23,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\67. Add Binary.js"
+            "program": "${workspaceFolder}\\10. Regular Expression Matching.js"
         }
     ]
 }
