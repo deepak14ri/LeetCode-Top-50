@@ -23,7 +23,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\10. Regular Expression Matching.js"
+            "program": "${workspaceFolder}\\38. Count and Say.js"
         }
     ]
 }
