@@ -23,7 +23,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\47. Permutations II.js"
+            "program": "${workspaceFolder}\\6. Zigzag Conversion.js"
         }
     ]
 }
