@@ -15,5 +15,4 @@ const printDTriangle = (row) => {
         console.log();
     }
 }
-const row = parseInt(prompt(''));
 printDTriangle(row);
