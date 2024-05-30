@@ -135,7 +135,10 @@ function findLongestMountainSequence(heights) {
 }
 
 // Sample Input
-// const input = prompt("Enter space-separated heights:");
+// let num = Number(prompt())
+// let input = String(prompt())
+// let arrayFormat = input.split(' ').map(Number)
+// console.log(arrayFormat, typeof input, typeof num);
 const inputHeights = "2 1 4 7 3 2 5 1";
 const heights = inputHeights.split(' ').map(Number);
 console.log("heights: ", heights)
