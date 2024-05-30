@@ -4,6 +4,15 @@
  */
 var solveSudoku = function(board) {
     const usedInRow = new Array(9).fill(false).map(() => new Array(9).fill(false));
+    /* example
+    [
+      [false, ...9 times],
+      ,
+      ,
+      9 times....
+      [false, ...9 times]
+    ]
+    */
     const usedInCol = new Array(9).fill(false).map(() => new Array(9).fill(false));
     const usedInBox = new Array(9).fill(false).map(() => new Array(9).fill(false));
   
