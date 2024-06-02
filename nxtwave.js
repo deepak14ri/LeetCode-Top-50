@@ -57,6 +57,7 @@ const hollowTrianglePattern = (row) => {
 // Quest:3
 // zigzack pattern of string 
 const convert = (s, numRows) => {
+    if(numRows === 1) return s;
     let n = s.length;
     let charsInSection = 2*numRows - 2;
     let res = '';
@@ -74,6 +75,7 @@ const convert = (s, numRows) => {
     }
     return res;
 }
+
 
 // Quest:4
 
@@ -145,4 +147,132 @@ console.log("heights: ", heights)
 // Find the longest mountain sequence
 const result = findLongestMountainSequence(heights);
 console.log(result.join(' ')); // Expected output: 1 4 7 3 2
+
+// Question 6:
+
+let ar = [1,2,3,4,5,2,3,4];
+const remDup = () => {
+    let obj = {};
+    for(let i=0;i<ar.length;i++){
+        if(obj[ar[i]]){
+            obj[ar[i]]++;
+        }else{
+            obj[ar[i]] = 1;
+        }
+    }
+    return obj
+}
+let res = remDup();
+console.log("Remove duplicate values: ", Object.keys(res));
+let filterResult = Object.keys(res).filter((key) => res[key] === 1);
+console.log("Only unique values: ", filterResult);
+
+
+
+
+import React, { useState, useEffect } from "react";
+
+export default filterTodosTitle = () => {
+  const [todos, setTodos] = useState([]);
+  const [query, setQuery] = useState("");
+  const [filteredTodos, setFilteredTodos] = useState([]);
+
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/todos")
+      .then((response) => response.json())
+      .then((data) => setTodos(data));
+  }, []);
+
+  useEffect(() => {
+    if (query) {
+      setFilteredTodos(
+        todos.filter((todo) =>
+          todo.title.toLowerCase().includes(query.toLowerCase())
+        )
+      );
+    } else {
+      setFilteredTodos([]);
+    }
+  }, [query, todos]);
+
+  return (
+    <>
+      <div>
+        <input
+          type="text"
+          placeholder="type here..."
+          style={{ border: "1px solid #ccc" }}
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+        <div>
+          {filteredTodos.length > 0 && (
+            <div>
+              {filteredTodos.map((todo) => (
+                <div key={todo.id}>{todo.title}</div>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+    </>
+  );
+};
+
+
+const RegistrationDetails = () => {
+    const [formData, setFormData] = useState({
+        username: '',
+        email: '',
+        password: ''
+    });
+
+    const handleChange = (e) => {
+        const { name, value} = e.target;
+
+        setFormData({
+            ...formData, 
+            [name]: value
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log('Form data submitted ', formData);
+        setFormData({
+            username: '',
+            email: '',
+            password: ''
+        });
+    }
+
+    return (
+        <div className="registration-container">
+            <h2>Registration form</h2>
+            <form onSubmit={handleSubmit}>
+                <label>Username</label>
+                <input type="text"
+                    placeholder="username"
+                    name='username'
+                    value={formData.username}
+                    onChange={handleChange}
+                    required />
+                <label>Email</label>
+                <input type="text"
+                    placeholder="email"
+                    name='email'
+                    value={formData.email}
+                    onChange={handleChange} 
+                    required />
+                <label>Password</label>
+                <input type="text"
+                    placeholder="password"
+                    name='password'
+                    value={formData.password}
+                    onChange={handleChange}
+                    required />
+            </form>
+        </div>
+    )
+}
 
