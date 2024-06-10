@@ -4,13 +4,13 @@ const quickSort = (arr) => {
     let pivot = arr[Math.floor((arr.length)/2)];
     let left = [];
     let right = [];
-    for(let i=0;i<arr.length;i++){
-        if(arr[i] < pivot){
-            left.push(arr[i])
-        }else if(arr[i] > pivot){
-            right.push(arr[i])
+    for(let num in arr){
+        if(num < pivot){
+            left.push(num)
+        }else if(num > pivot){
+            right.push(num)
         }else{
-            pivot = arr[i]
+            pivot = num
         }
     }
     
