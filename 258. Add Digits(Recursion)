@@ -1,0 +1,23 @@
+/**
+ * @param {number} num
+ * @return {number}
+ */
+var addDigits = function(num) {
+    return 1+(num-1)%9;
+}
+
+// var addDigits = function(num) {
+//     const addDigit = (n) => {
+//         let sum = 0;
+//         while(n>0){
+//             let rem = n%10;
+//             sum += rem;
+//             n = Math.floor(n/10);
+//         }
+//         return sum;
+//     }
+//     while(num >= 10){
+//         num = addDigit(num);
+//     }
+//     return num;
+// }
