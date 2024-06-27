@@ -23,7 +23,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\6. Zigzag Conversion.js"
+            "program": "${workspaceFolder}\\customSortingString.js"
         }
     ]
 }
