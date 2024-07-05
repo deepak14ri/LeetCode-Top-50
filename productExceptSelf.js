@@ -9,13 +9,13 @@ var productExceptSelf = function(nums) {
     let leftProduct = 1;
     for (let i = 0; i < length; i++) {
         ans[i] *= leftProduct;
-        leftProduct *= nums[i];
+        leftProduct *= nums[i]; //1 1 2 6
     }
 
     let rightProduct = 1;
     for (let i = length - 1; i >= 0; i--) {
         ans[i] *= rightProduct;
-        rightProduct *= nums[i];
+        rightProduct *= nums[i]; // 24 12 8 6
     }
 
     return ans;

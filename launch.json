@@ -23,7 +23,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\customSortingString.js"
+            "program": "${workspaceFolder}\\productExceptSelf.js"
         }
     ]
 }
